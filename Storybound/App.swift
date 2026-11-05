@@ -156,7 +156,7 @@ struct StoryViewerApp: App {
     @StateObject var trailer = TrailerModel()
     init() { Verify.runIfAsked() }
     var body: some Scene {
-        WindowGroup("Against the Grain · Season 1") {
+        WindowGroup("Storybound") {
             ContentView().environmentObject(store).environmentObject(nav).environmentObject(hover).environmentObject(exporter).environmentObject(player).environmentObject(listener)
                 .environmentObject(trailer)
                 .onAppear { listener.store = store }
